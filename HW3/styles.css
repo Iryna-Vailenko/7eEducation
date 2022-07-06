@@ -1,0 +1,173 @@
+.main{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.stand-witn-Ukraine{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 167.02%;
+    text-align: center;
+    color: #0BBBD3;
+
+}
+
+.color-word-H1{
+    color: #595050;
+}
+
+.bcg-img{
+    background-image: url(./img/Успенський\ собор\ 1.jpg);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 600px;
+    padding-left: 80px;
+    padding-top: 216px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.main-text{
+    position: absolute;
+    left: 163px;
+    top: 200px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 167%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.places{
+    margin-left: 76px;
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 167.02%;
+    color: #000000;
+    border-bottom: 5px solid #33b8f1;
+    width: 360px;
+    margin-bottom: 120px;
+}
+
+.card-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 480px;
+    background: #FFFEFE;
+    box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-right: 34px;
+}
+
+.card-title1{
+    color: #33B8F1;
+}
+
+.card-title, .card-title1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 167.02%;
+    margin: 0;
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 146%;
+    color: #595050;
+    margin: 0;
+}
+
+.subtitle-2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 167.02%;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-left: 454px;
+    border-bottom: 5px solid #33b8f1;
+    width: 450px;
+}
+
+.heart{
+    margin: 42px 234px 0 233px;
+    height: 877px;
+}
+
+.bcg-img2{
+    background-image: url(./img/Heart.png);
+    background-repeat: no-repeat;
+    width: 973px;
+    height: 877px;
+    margin-left: 233px;
+    margin-bottom: 182px;
+}
+
+.btn{
+    text-align: center;
+    border: 0;
+    width: 430px;
+    height: 74px;
+    margin-left: 272px;
+    background: #33ADF1;
+    margin-bottom: 182px;
+}
+
+.btn-txt{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 167.02%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer {
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    background-color:  #0A2DA9;;
+    color: white;
+    display: block;
+    height: 400px;
+    left: 0;
+    position: absolute;
+    width: 1440px;
+}
+
+.footer-title{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 135.02%;
+    color: #0BBBD3;
+    
+}
+
+.color-footer-title{
+    color: #F8F5F5;
+}
+
+.contacts{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 135.02%;
+    color: #3F828B;
+}
+
+.mess{
+    background-color: #0931BF;
+    width: 68px;
+    height: 64px;
+    border-radius: 35px;
+    border: 0;
+    margin-right: 55px;
+}
