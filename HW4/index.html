@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600&family=Open+Sans&family=PT+Sans:wght@700&display=swap"
-        rel="stylesheet"> 
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600&family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Homework4</title>
 </head>
@@ -30,8 +31,77 @@
             <span style="top: 15px;">UA</span>
         </div>
     </header>
-    <main>
-
+    <main class="main-content">
+        <div class="title-bcg">
+            <h1 class="title">Забронювати будиночок</h1>
+        </div>
+        <section class="cards">
+            <select class="places-values" name="places">
+                <option value="1">Оберіть місцерозташування</option>
+                <option value="2">Незвідана Бакота</option>
+                <option value="3">Полонини Карпат</option>
+                <option value="4">Автентична Київщина</option>
+                <option value="5">Нетипова Одещина</option>
+            </select>
+            <div class="card">
+                <img class="coord-img" src="./img/card1.png" alt="Бакота" >
+                <div class="star"></div>
+                <h2 class="title-card">Незвідана Бакота</h2>
+                <div class="text-card">
+                    <p>
+                        У Хмельницькій області розташований загублений край -
+                        Бакота. Мальовничий каньйон з давньою історією захоплює
+                        своїми просторами та незвичною атмосферою. Бджільництво,
+                        свіжий мед із польових трав, дотик до природи.
+                    </p>
+                </div>
+                <button class="btn">Детальніше</button>
+            </div>
+            <div class="card">
+                <img class="coord-img" src="./img/card2.png" alt="Карпати">
+                <div class="star"></div>
+                <h2 class="title-card">Полонини Карпат</h2>
+                <div class="text-card">
+                    <p>
+                        Полонини Карпат, у селі Орів посеред гір
+                        розташувався затишний куточок для незабутніх
+                        вражень. Справжні українські гори, власноручне
+                        сироваріння на полонині, водоспади та
+                        вікові дерева чекають на Вас.
+                    </p>
+                </div>
+                <button class="btn">Детальніше</button>
+            </div>
+            <div class="card">
+                <img class="coord-img" src="./img/card3.png" alt="Київщина">
+                <div class="star"></div>
+                <h2 class="title-card">Автентична Київщина</h2>
+                <div class="text-card">
+                    <p>
+                        Неподалік центра Києва розташувалось автентичне українське село 
+                        на території однойменного села Пирогово. Дерев’яні
+                        млини, запашний хліб, приготовлений своїми руками, 
+                        українські пісні та багато іншого чекає на вас уже зараз.
+                    </p>
+                </div>
+                <button class="btn">Детальніше</button>
+            </div>
+            <div class="card">
+                <img class="coord-img" src="./img/card4.png" alt="Одещина">
+                <div class="star"></div>
+                <h2 class="title-card">Нетипова Одещина</h2>
+                <div class="text-card">
+                    <p>
+                        В Одеській області знаходиться мальовниче містечко Вилкове.
+                        Його ще називають «українською Венецією». Вилкове - це містечко
+                        на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
+                        Дунай та Чорне море. Люди пересуваються переважно човнами.
+                        Нетипове українське село не залишить Вас без вражень.
+                    </p>
+                </div>
+                <button class="btn">Детальніше</button>
+            </div>
+        </section>
     </main>
     <footer>
 
