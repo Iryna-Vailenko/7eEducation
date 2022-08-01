@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <main>
+    <div class="left">
+      <header>Kreativ</header>
+      <h2>Let’s get you started</h2>
+      <form class="form">
+        <label class="form__lbl" for="name">Full name</label>
+        <input class="form__inp" type="text" id="name" placeholder="Ade Tiger" required>
+
+        <label class="form__lbl" for="email">Email address</label>
+        <input class="form__inp" type="email" id="email" placeholder="yourname@email.com" required>
+
+        <label class="form__lbl" for="phone">Phone number</label>
+        <input class="form__inp" type="tel" id="phone" placeholder="+234 800 2738 9700" required>
+
+        <label class="form__lbl" for="pass">Create password</label>
+        <input class="form__inp form__inp-pass" style="margin-bottom: 12px;" type="password" id="pass" placeholder="12345678">
+        <p>Password must contain a minimum of 8 characters</p>
+        <p>Password must contain at least one symbol e.g. @, !</p>
+
+        <label class="form__lbl" for="city" style="margin-top: 24px;">Location <span>(Optional)</span></label>
+        <select name="city" id="city">
+          <option value="Select Location">Select Location</option>
+          <option value="Kharkiv">Kharkiv</option>
+          <option value="Kiev">Kiev</option>
+          <option value="Lviv">Lviv</option>
+          <option value="Dnepr">Dnepr</option>
+        </select>
+
+        <input class="form__btn" type="submit" value="Sign Up">
+
+        <p class="form__login">Already a user? 
+          <a href="#">Login</a>
+        </p>
+      </form>
+    </div>
+    <div class="right">
+      <header>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div>
+        <h1>“Creativity is intelligence having fun”</h1>
+        <p>- Albert Einstein</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
