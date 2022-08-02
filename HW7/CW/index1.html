@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samples</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form class="form1">
+    <!--
+        Для створення текстового поля у формі слід використовувати елемент input з атрибутом type і значенням text.
+        Також елемент може мати додаткові атрибути:
+            - maxlength – максимально допустима кількість символів у текстовому полі.
+            - pattern - визначає шаблон, якому повинен відповідати текст, що вводиться.
+            - placeholder – встановлює текст, який за замовчуванням відображається у текстовому полі.
+            - readonly – робить текстове поле доступним лише для читання.
+            - required - вказує, що текстове поле обов'язково має мати значення.
+            - value - встановлює значення за промовчанням у текстовому полі.
+         -->
+    <p>
+      <label for="login" accesskey="l">Логин: </label>
+      <input type="text" id="login" placeholder="name" required />
+    </p>
+    
+    <p>
+      <label for="pass">Пароль:</label>
+      <input type="password" id="pass" placeholder="Введите пароль" required />
+    </p>
+    
+    <!-- 
+                 input з типом submit надсилає дані на сторінку, вказану в атрибуті action тега form.
+                input з типом reset скидає значення всіх елементів форми початковий стан.
+              -->
+    <p>
+      <input type="reset" value="Сбросить" />
+      <input type="submit" value="Отправить" />
+    </p>
+  </form>
+
+  <form class="form2">
+    <div class="sample">
+      <input type="radio" checked name="one" id="one">
+      <label for="one">
+        <span class="c"></span>
+        <span class="t">text</span>
+      </label>
+      <input type="radio" name="one" id="two">
+      <label for="two">
+        <span class="c"></span>
+        <span class="t">text</span>
+      </label>
+    </div>
+  </form>
+
+  <form class="form3">
+      <h3>Виберіть курси, які бажаєте вивчити:</h3>
+      <p>
+        <input type="checkbox" value="html5" />
+        <label>HTML5&amp;CSS3</label>
+      </p>
+      <p>
+        <input type="checkbox" value="bootstrap" id="id" />
+        <label for="id">Bootstrap 5</label>
+      </p>
+      <p><label>
+          <input type="checkbox" checked value="js" />
+          JavaScript</label>
+      </p>
+      <p>
+        <input type="checkbox" value="React" />
+        <label>React</label>
+      </p>
+      <h3>Выберите удобное для Вас время:</h3>
+      <p>
+        <input type="radio" name="time" value="morning" />
+        <label>09:00 - 11:00</label>
+      </p>
+      <p>
+        <input type="radio" name="time" value="dinner" />
+        <label>11:00 - 15:00</label>
+      </p>
+      <p>
+        <input type="radio" name="time" value="evening" />
+        <label>19:00 - 21:00</label>
+      </p>
+      <p>
+        <button type="submit">Отправить данные</button>
+      </p>
+  </form>
+
+  <form action="./index.php" autocomplete="on" class="form4">
+    <table>
+      <thead>
+        <tr>
+          <th>Тип</th>
+          <th>Описание</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>color </td>
+          <td>Виджет для выбора цвета.</td>
+          <td><input type="color" placeholder=""></td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td>Поле для выбора календарной даты.</td>
+          <td><input type="date" placeholder=""></td>
+        </tr>
+        <tr>
+          <td>datetime</td>
+          <td>Указание даты и времени.</td>
+          <td><input type="datetime" placeholder=""></td>
+        </tr>
+        <tr>
+          <td>datetime-local</td>
+          <td>Указание местной даты и времени.</td>
+          <td><input type="datetime-local" placeholder=""></td>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td>Для адресов электронной почты.</td>
+          <td><input type="email" placeholder="email@com.ua" required></td>
+        </tr>
+        <tr>
+          <td>number</td>
+          <td>Ввод чисел.</td>
+          <td><input type="number" min="10" max="20" required placeholder="55.95"></td>
+        </tr>
+        <tr>
+          <td>range</td>
+          <td>Ползунок для выбора чисел в указанном диапазоне.</td>
+          <td><input oninput="console.log(this.value)" type="range" placeholder="" value="30" min="1" max="100" step="1">
+          </td>
+        </tr>
+        <tr>
+          <td>search</td>
+          <td>Поле для поиска.</td>
+          <td><input type="search" placeholder="search"></td>
+        </tr>
+        <tr>
+          <td>tel</td>
+          <td>Для телефонных номеров.</td>
+          <td><input type="tel" required placeholder="+380"></td>
+        </tr>
+        <tr>
+          <td>time</td>
+          <td>Для времени.</td>
+          <td><input type="time" placeholder=""></td>
+        </tr>
+        <tr>
+          <td>url</td>
+          <td>Для веб-адресов.</td>
+          <td><input type="url" placeholder="https://google.com.ua"></td>
+        </tr>
+        <tr>
+          <td>month</td>
+          <td>Выбор месяца.</td>
+          <td><input type="month" placeholder=""></td>
+        </tr>
+        <tr>
+          <td>week</td>
+          <td>Выбор недели.</td>
+          <td><input type="week" placeholder=""></td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="submit" value="Отправить">
+  </form>
+
+  <form class="form5" style="margin: 20px 0;">
+    <label for="form1">Выберите удобную станцию</label>
+    <input type="text" id="form1" list="metro" />
+    <datalist id="metro">
+      <option value="Синяя ветка"></option>
+      <option value="Теремки"></option>
+      <option value="Иподром"></option>
+      <option value="ВДНХ"></option>
+      <option value="Васильковская"></option>
+      <option value="Голосиевска"></option>
+      <option value="Демеевская"></option>
+      <option value="Лыбедская"></option>
+      <option value="Дворец Украины"></option>
+      <option value="Олимпийская"></option>
+      <option value="Льва Толстого"></option>
+      <option value="Площадь независимости"></option>
+      <option value="Почтовая Площа"></option>
+      <option value="Контрактовая Площа"></option>
+      <option value="Тараса Шевченко"></option>
+      <option value="Почайна"></option>
+      <option value="Оболонь"></option>
+      <option value="Минская"></option>
+      <option value="Героев Днепра"></option>
+    </datalist>
+    <input type="submit" value="Отправить"/>
+  </form>
+
+  <form class="form6">
+    <fieldset>
+      <legend>Пример создания выпадающих и многозначных списков</legend>
+      <p>
+        <label for="phone">Выберите модель:</label>
+        <select id="phone">
+          <option value="iphone X">iPhone 13</option>
+          <option value="Xiaomi MI A3">Xiaomi</option>
+          <option value="Alcatel">Lumia</option>
+          <option value="Nokia">Nokia</option>
+        </select>
+      </p>
+      <p>
+        <label for="phone">Выберите модель:</label>
+        <select id="phone" name="phone">
+          <option disabled selected>Выберите модель</option>
+          <option value="Xiaomi MI A3">Xiaomi</option>
+          <option value="Alcatel">Simens</option>
+          <option value="Nokia">Nokia</option>
+        </select>
+      </p>
+      <p>
+        <!-- Задав атрибут multiple, в выпадающем списке можно выбрать несколько элементов. -->
+        <label for="phone">Выберите модель:</label>
+        <select multiple id="phone" name="phone">
+          <option value="iphone X">iPhone 12</option>
+          <option value="Xiaomi MI A3">Xiaomi</option>
+          <option value="Alcatel">Simens</option>
+          <option value="Nokia">Nokia</option>
+        </select>
+      </p>
+      <p>
+        <!-- Элементы выпадающего списка можно сгруппировать, поместив группу тегов option внутрь тега optgroup -->
+        <label for="phone">Выберите модель:</label>
+        <select id="phone" name="phone">
+          <optgroup label="Apple">
+            <option value="iphone 6s">iPhone 5s</option>
+            <option value="iphone 6s plus">iPhone 6S Plus</option>
+            <option value="iphone 5se">iPhone 12</option>
+          </optgroup>
+          <optgroup label="Microsoft">
+            <option value="lumia 950">Lumia 950</option>
+            <option value="lumia 950 xl">Lumia 950 XL</option>
+            <option value="lumia 650">Lumia 650</option>
+          </optgroup>
+        </select>
+      </p>
+    </fieldset>
+    <p>
+      <!-- Тег textarea позволяет создать многострочное поле для ввода текста. С помощью атрибута cols и rows можно задать количество строк и столбцов. -->
+      <label for="comment">Оставьте комментарий:</label><br />
+      <textarea id="comment" name="comment" placeholder="Написать комментарий" cols="50" rows="4"></textarea>
+    </p>
+  </form>
+
+  <form class="form7">
+    <p>
+      <label for="login1">Логин:</label>
+      <input type="text" name="login" id="login1" required>
+    </p>
+    <p>
+      <label for="password">Пароль:</label>
+      <input type="password" name="password" id="password" required>
+    </p>
+    <p>
+      <label for="age">Возраст:</label>
+      <input type="number" name="age" id="age" value="18" min="1" max="10" />
+    </p>
+    <p>
+      <label for="phone1">Телефон:</label>
+      <input type="tel" name="phone" id="phone1" placeholder="555-55555" pattern="\d{3}-\d{5}" />
+    </p>
+    <p>
+      <input type="submit" value="Регистрация" />
+    </p>
+  </form>
+</body>
+</html>

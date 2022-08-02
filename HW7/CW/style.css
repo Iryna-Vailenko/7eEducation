@@ -1,0 +1,74 @@
+.form1 label {
+  width: 150px;
+  display: inline-block;
+}
+
+.form2 .sample {
+  border: 3px solid black;
+  width: 15%;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.form2 input[type="radio"] {
+  display: none;
+}
+
+.form2 label>span.c {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.form2 input[type="radio"]:checked+label>span.c {
+  background-color: green;
+}
+
+.form4 table {
+  width: 80%;
+  height: 600px;
+  font-size: 1.2rem;
+  empty-cells: show;
+  border-collapse: collapse;
+}
+
+.form4 table,
+td,
+tr,
+th {
+  border: 3px solid black;
+}
+
+.form4 td:nth-of-type(3) {
+  width: 350px;
+  background: black;
+}
+
+.form4 input {
+  width: 300px;
+  height: 30px;
+}
+
+.form4 input[type="submit"] {
+  background: rgba(100, 255, 100, 1);
+  border: none;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 193px;
+  transition: all .7s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form4 input[type="submit"]:hover {
+  background: rgba(100, 255, 100, .8);
+  transform: scale(1.1);
+}
+
+.form6 textarea {
+  resize: none;
+}
